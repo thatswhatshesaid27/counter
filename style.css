@@ -1,0 +1,129 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: #f0f0f0;
+    margin: 50px;
+ 
+    box-sizing: border-box;
+    /* max-width: 400px;
+    max-height: 400px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.background{
+    box-sizing: border-box;
+    min-height: 600px;
+    max-width: 1200px;
+    padding: 100px;
+    background-color: rgb(250, 231, 215);
+    
+}
+
+.container{
+    display: flex;
+    box-sizing: border-box;
+    padding: 80px;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#val{
+    height: 100px;
+    width: 20em;
+    font-size: 40px;
+    border-right: none;
+}
+
+
+#val::placeholder{
+    color: #777777;
+    font-size: 80px;
+    margin-top: 90rem;
+     /* margin-bottom: 90rem; */
+    /* padding-top: 30px; */
+    text-align: left;
+    align-items: center;
+}
+#val:focus::placeholder{
+    color: transparent;
+    font-size: 80px;
+    margin-top: 90rem;
+    text-align: left;
+    align-items: center;
+    
+}
+
+#val:focus{
+    outline: none;
+    border: 10px solid lightblue;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    align-items: center;
+}
+
+#inc{
+    width: 55em;
+    height: 5em;
+    color: rgb(255, 251, 251);
+    font-size: 100%;
+    /* font-size: 1rem; */
+    background-color: green;
+    border-radius: 10px;
+    border: none  ;
+    /* font-size: 10px; */
+}
+
+#inc:hover{
+    background-color: #81fa71;
+    color: green;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none  ;
+}
+
+#dec{
+    width: 55rem;
+    height: 5em;
+    color: rgb(255, 255, 255);
+    background-color: gray;
+    border-radius: 10px;
+    border: none  ;
+    font-size: 1rem;
+    /* font-size: xx-large; */
+    /* font-size: 10px; */
+}
+
+#dec:hover{
+    background-color: #bbbbbbc7;
+    color: green;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none  ;
+}
+
+.header{
+    display: flex;
+    gap: none;
+}
+.header button{
+    position: relative;
+    /* height: 100px; */
+    width: 40px;
+    background-color: #ffffff;
+}
+
+
+

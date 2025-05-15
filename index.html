@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+  
+    function increment(){
+      let val=document.getElementById('val').value;
+      console.log('fetching value from input',val)
+      val++
+      console.log('after decrementing',val)
+      let inc = val;
+      console.log('after storing val value in dec variable',(inc))
+      document.getElementById('val').value=inc
+      console.log('after assiging dec value to input tags value',inc)
+    }
+
+    function decrement(){
+      let val=document.getElementById('val').value;
+      console.log('fetching value from input',val)
+      val--
+      console.log('after decrementing',val)
+      let dec = val;
+      console.log('after storing val value in dec variable',(dec))
+      document.getElementById('val').value=dec
+      console.log('after assiging dec value to input tags value',val)
+      // console.log(val)
+      // num--
+      // val.value=num
+    }
+
+    function reset(){
+      document.getElementById('val').value=0
+    }
+  </script>
+  <body>
+    <div class="background">
+      <div class="container">
+        <div class="header">
+          <input type="number" name="no" id="val" placeholder="0" value=0 /><button id="reset" onclick="reset()">X</button>
+        </div>
+          <button id="inc" onclick="increment()">+</button>
+
+
+          <button id="dec" onclick="decrement()">-</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
