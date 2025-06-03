@@ -7,7 +7,6 @@
   </head>
   <link rel="stylesheet" href="style.css" />
   <script>
-  
     function increment(){
       let val=document.getElementById('val').value;
       console.log('fetching value from input',val)
@@ -23,8 +22,11 @@
       let val=document.getElementById('val').value;
       console.log('fetching value from input',val)
       val--
+      if(val < 0){
+        val = 0; // Prevent negative values
+      }
       console.log('after decrementing',val)
-      let dec = val;
+      let dec = parseInt(val);  
       console.log('after storing val value in dec variable',(dec))
       document.getElementById('val').value=dec
       console.log('after assiging dec value to input tags value',val)
@@ -41,7 +43,7 @@
     <div class="background">
       <div class="container">
         <div class="header">
-          <input type="number" name="no" id="val" placeholder="0" value=0 /><button id="reset" onclick="reset()">X</button>
+          <input type="number" name="no" id="val" placeholder="0" value=0  min="0" style="font-weight: bold;padding: 10px;" disabled/><button id="reset" onclick="reset()">X</button>
         </div>
           <button id="inc" onclick="increment()">+</button>
 
